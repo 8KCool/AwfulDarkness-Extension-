@@ -1,0 +1,39 @@
+{
+    "manifest_version": 3,
+    "name": "maika",
+    "description": "Browser Extension of maika.com V3",
+    "version": "0.0.1",
+    "permissions": [
+        "contextMenus",
+        "storage",
+        "tabs",
+        "activeTab"
+    ],
+    "background": {
+        "service_worker": "/background.js"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "/content.js"
+            ]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "../assets/thumb/thumb2.png"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ],
+    "options_page": "options.html"
+}

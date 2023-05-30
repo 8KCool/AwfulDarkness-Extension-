@@ -1,0 +1,154 @@
+.main-extension .custom-context div {
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.main-extension .custom-context {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 8px;
+    gap: 10px;
+
+    background-color: white;
+    border: 1px solid #CFCFCF;
+    box-shadow: 0px 2px 5px #A0A0A0;
+    border-radius: 5px;
+    z-index: 99999999;
+}
+
+.main-extension .custom-context .context-button {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    padding: 6px;
+    box-sizing: border-box;
+    font-size: 20px;
+    text-align: center;
+    background-color: #FFFFFF;
+    line-height: inherit;
+    border-radius: 10px;
+    color: #111111;
+}
+
+.main-extension .custom-context .context-button:hover {
+    background-color: #EBEBEB;
+    color: #6563FF;
+}
+
+.main-extension .custom-context .context-button.active {
+    background-color: #EBEBEB;
+    color: #6563FF;
+}
+
+
+.main-extension .color-modal {
+    left: 0px;
+    top: 50px;
+    z-index: 99999999;
+}
+
+.main-extension .changecolor-modal {
+    left: 52px;
+    top: 50px;
+    z-index: 99999999;
+}
+
+.main-extension .translate-modal {
+    right: 0px;
+    top: 50px;
+    z-index: 99999999;
+}
+
+.main-extension .tool-modal {
+    box-sizing: border-box;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    position: absolute;
+    background: #FFFFFF;
+    /* Greyscale/400 */
+    border: 1px solid #CFCFCF;
+    box-shadow: 0px 2px 5px #A0A0A0;
+    border-radius: 5px;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: 0% 0%;
+    transition: all .3s linear;
+}
+
+.main-extension .tool-modal.active {
+    opacity: 1;
+    transform: scaleY(1);
+
+}
+
+.main-extension .tool-button {
+    padding: 5px 8px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    color: #111111;
+}
+
+.main-extension .tool-button:hover {
+    background: #F5F5F5;
+}
+
+
+/* highlighted-context */
+.main-extension .custom-context div {
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.main-extension .highlighted-custom-context {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 8px;
+    gap: 10px;
+
+    background-color: white;
+    border: 1px solid #CFCFCF;
+    box-shadow: 0px 2px 5px #A0A0A0;
+    border-radius: 5px;
+    z-index: 99999999;
+}
+
+.main-extension .highlighted-custom-context .context-button {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    padding: 6px;
+    box-sizing: border-box;
+    font-size: 20px;
+    text-align: center;
+    background-color: #FFFFFF;
+    line-height: inherit;
+    border-radius: 10px;
+    color: #111111;
+}
+
+.main-extension .highlighted-custom-context .context-button:hover {
+    background-color: #EBEBEB;
+    color: #6563FF;
+}
+
+.main-extension .highlighted-custom-context .context-button.active {
+    background-color: #EBEBEB;
+    color: #6563FF;
+}
+
+.main-extension svg {
+    vertical-align: baseline !important;
+}

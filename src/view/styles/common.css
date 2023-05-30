@@ -1,0 +1,226 @@
+.maika-extension * {
+    font-family: 'Averta-Regular';
+    color: #111111;
+}
+
+.maika-extension .pl-10px {
+    padding-left: 10px;
+}
+
+.maika-extension .px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.maika-extension .pt-11px {
+    padding-top: 11px;
+}
+
+.maika-extension .mt-2px {
+    margin-top: 2px;
+}
+
+.maika-extension .mt-3px {
+    margin-top: 3px;
+}
+
+.maika-extension .mt-4px {
+    margin-top: 4px;
+}
+
+.maika-extension .mt-5px {
+    margin-top: 5px;
+}
+
+.maika-extension .mt-6px {
+    margin-top: 6px;
+}
+
+.maika-extension .mt-8px {
+    margin-top: 8px;
+}
+
+.maika-extension .mt-9px {
+    margin-top: 9px;
+}
+
+.maika-extension .mt-10px {
+    margin-top: 10px;
+}
+
+.maika-extension .mt-11px {
+    margin-top: 11px;
+}
+
+.maika-extension .mt-12px {
+    margin-top: 12px;
+}
+
+.maika-extension .mt-18px {
+    margin-top: 18px;
+}
+
+.maika-extension .ml-2px {
+    margin-left: 2px;
+}
+
+.maika-extension .ml-5px {
+    margin-left: 5px;
+}
+
+.maika-extension .ml-6px {
+    margin-left: 6px;
+}
+
+.maika-extension .ml-7px {
+    margin-left: 7px;
+}
+
+.maika-extension .ml-8px {
+    margin-left: 8px;
+}
+
+.maika-extension .ml-10px {
+    margin-left: 10px;
+}
+
+.maika-extension .ml-13px {
+    margin-left: 13px;
+}
+
+.maika-extension .ml-14px {
+    margin-left: 14px;
+}
+
+.maika-extension .ml-17px {
+    margin-left: 17px;
+}
+
+
+.maika-extension .mr-2px {
+    margin-right: 2px;
+}
+
+.maika-extension .mr-7px {
+    margin-right: 7px;
+}
+
+.maika-extension .mr-10px {
+    margin-right: 10px;
+}
+
+.maika-extension .mr-14px {
+    margin-right: 14px;
+}
+
+.maika-extension .mx-7px {
+    margin-right: 7px;
+    margin-left: 7px;
+}
+
+.maika-extension .mb-3px {
+    margin-bottom: 3px;
+}
+
+.maika-extension .mb-12px {
+    margin-bottom: 12px;
+}
+
+.maika-extension .float-right {
+    float: right;
+}
+
+.maika-extension .float-left {
+    float: left;
+}
+
+/* icon button */
+.maika-extension .ico-18 {
+    width: 18px;
+    height: 18px;
+}
+
+.maika-extension .ico-27 {
+    width: 27px;
+    height: 27px;
+}
+
+.maika-extension .ico-32 {
+    width: 32px;
+    height: 32px;
+}
+
+.maika-extension .ico-21 {
+    width: 21px;
+    height: 21px;
+}
+
+.maika-extension .position-relative {
+    position: relative;
+}
+
+
+.maika-extension .hide {
+    visibility: hidden;
+}
+
+
+.maika-extension .show {
+    visibility: unset;
+}
+
+.maika-extension .block {
+    display: block !important;
+}
+
+.maika-extension .none {
+    display: none !important;
+}
+
+.maika-extension .display-flex {
+    display: flex;
+}
+
+.maika-extension .display-inlineflex {
+    display: inline-flex;
+}
+
+.highlight-yellow {
+    background-color: #FFDA44 !important;
+    color: #111111;
+}
+
+.highlight-green {
+    background-color: #32D583 !important;
+    color: white;
+}
+
+.highlight-lightblue {
+    background-color: #BAD4FF !important;
+    color: #111111;
+}
+
+.maika-extension .pointer {
+    cursor: pointer;
+}
+
+.highlight-green.highlight-hover {
+    background-color: #1e9f5f !important;
+    cursor: pointer;
+}
+
+.highlight-yellow.highlight-hover {
+    background-color: #daba3e !important;
+    cursor: pointer;
+}
+
+.highlight-lightblue.highlight-hover {
+    background-color: #9bbff8 !important;
+    cursor: pointer;
+}
+
+.maika-extension .divide-1px {
+    width: 100%;
+    height: 1px;
+    background-color: #F0F0F0;
+}

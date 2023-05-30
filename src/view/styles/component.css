@@ -1,0 +1,237 @@
+.maika-extension .ico-flag {
+    background-image: url("@/assets/btn/ico-vietnam.png");
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.maika-extension .ico-alarm {
+    background-image: url("@/assets/btn/ico-alarm.png");
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.maika-extension .ico-alarm:hover {
+    background-image: url("@/assets/btn/ico-alarm-hover.png");
+    background-size: 100% 100%;
+}
+
+.maika-extension .ico-expand {
+    background-image: url("@/assets/btn/ico-expand.png");
+    background-size: 100% 100%;
+}
+
+.maika-extension .ico-expand:hover {
+    background-image: url("@/assets/btn/ico-expand-hover.png");
+    background-size: 100% 100%;
+}
+
+.maika-extension .ico-setting {
+    background-image: url("@/assets/btn/ico-setting.png");
+    background-size: 100% 100%;
+}
+
+.maika-extension .ico-setting:hover {
+    background-image: url("@/assets/btn/ico-setting-hover.png");
+    background-size: 100% 100%;
+}
+
+.maika-extension .ico-close {
+    background-image: url("@/assets/btn/ico-close.png");
+    background-size: 100% 100%;
+}
+
+.maika-extension .ico-close:hover {
+    background-image: url("@/assets/btn/ico-close-hover.png");
+    background-size: 100% 100%;
+}
+
+.maika-extension .ico-submenu {
+    background-image: url("@/assets/btn/ico-submenu.png");
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    right: 0;
+}
+
+.maika-extension .ico-chat {
+    background-image: url("@/assets/btn/ico-chat.png");
+    background-size: 100% 100%;
+}
+
+.maika-extension .ico-chat:hover {
+    background-image: url("@/assets/btn/ico-chat-active.png");
+    background-size: 100% 100%;
+}
+
+.maika-extension .ico-chat.active {
+    background-image: url("@/assets/btn/ico-chat-active.png");
+    background-size: 100% 100%;
+}
+
+.maika-extension .ico-news {
+    background-image: url("@/assets/btn/ico-news.png");
+    background-size: 100% 100%;
+}
+
+.maika-extension .ico-news:hover {
+    background-image: url("@/assets/btn/ico-news-active.png");
+    background-size: 100% 100%;
+}
+
+.maika-extension .ico-news.active {
+    background-image: url("@/assets/btn/ico-news-active.png");
+    background-size: 100% 100%;
+}
+
+.maika-extension .ico-todo {
+    background-image: url("@/assets/btn/ico-todo.png");
+    background-size: 100% 100%;
+}
+
+.maika-extension .ico-todo:hover {
+    background-image: url("@/assets/btn/ico-todo-active.png");
+    background-size: 100% 100%;
+}
+
+.maika-extension .ico-todo.active {
+    background-image: url("@/assets/btn/ico-todo-active.png");
+    background-size: 100% 100%;
+}
+
+
+.maika-extension .ico-highlight {
+    background-image: url("@/assets/btn/ico-highlight.png");
+    background-size: 100% 100%;
+}
+
+.maika-extension .ico-highlight:hover {
+    background-image: url("@/assets/btn/ico-highlight-active.png");
+    background-size: 100% 100%;
+}
+
+.maika-extension .ico-highlight.active {
+    background-image: url("@/assets/btn/ico-highlight-active.png");
+    background-size: 100% 100%;
+}
+
+.maika-extension .ico-templates {
+    background-image: url("@/assets/btn/ico-templates.png");
+    background-size: 100% 100%;
+}
+
+.maika-extension .ico-templates:hover {
+    background-image: url("@/assets/btn/ico-templates-active.png");
+    background-size: 100% 100%;
+}
+
+.maika-extension .ico-templates.active {
+    background-image: url("@/assets/btn/ico-templates-active.png");
+    background-size: 100% 100%;
+}
+
+.maika-extension .ico-voicememo {
+    background-image: url("@/assets/btn/ico-voicememo.png");
+    background-size: 100% 100%;
+}
+
+.maika-extension .ico-voicememo:hover {
+    background-image: url("@/assets/btn/ico-voicememo-active.png");
+    background-size: 100% 100%;
+}
+
+.maika-extension .ico-voicememo.active {
+    background-image: url("@/assets/btn/ico-voicememo-active.png");
+    background-size: 100% 100%;
+}
+
+.maika-extension .ico-media {
+    background-image: url("@/assets/btn/ico-media.png");
+    background-size: 100% 100%;
+}
+
+.maika-extension .ico-media:hover {
+    background-image: url("@/assets/btn/ico-media-active.png");
+    background-size: 100% 100%;
+}
+
+.maika-extension .ico-media.active {
+    background-image: url("@/assets/btn/ico-media-active.png");
+    background-size: 100% 100%;
+}
+
+/* scroll */
+.maika-extension .scroll-div-y {
+    height: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* scroll */
+.maika-extension .scroll-div-x {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.maika-extension .custom-scroll::-webkit-scrollbar {
+    width: 7px;
+}
+
+.maika-extension .custom-scroll::-webkit-scrollbar-track {
+    background-color: transparent;
+    /* border: 1px solid lightgray; */
+}
+
+.maika-extension .custom-scroll::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.maika-extension .custom-scroll {
+    scrollbar-width: 5px;
+}
+
+.maika-extension .custom-scroll {
+    scrollbar-color: darkgrey;
+    scrollbar-width: 5px;
+}
+
+
+
+.maika-extension .custom-scroll-hide::-webkit-scrollbar {
+    height: 0px;
+}
+
+
+.maika-extension .maika-popup {
+    background: #FFFFFF;
+    box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: absolute;
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: 50% 50%;
+    transition: all .1s ease-in-out;
+    z-index: 3000001;
+}
+
+.maika-extension .maika-popup.modal-show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.maika-extension .maika-popup-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: transparent;
+    z-index: 3000000;
+    display: none;
+}
+
+.maika-extension .maika-popup-overlay.modal-show {
+    display: block;
+}
