@@ -6,16 +6,20 @@ import { PAGE_INDEX } from '@/view/content/const.js'
 import ContentHeader from "@/view/content/components/ContentHeader.vue"
 import ContentPage from "@/view/content/pages/index.vue"
 import MusicPlayer from "@/view/content/components/MusicPlayer.vue"
+import YoutubeBookMarkComponent from "@/view/content/components/youtube/YoutubeBookMarkComponent.vue"
 export default {
   components: {
     ContentHeader,
     MusicPlayer,
     ContentPage,
+    YoutubeBookMarkComponent
   },
   name: 'mainContentView',
   created: function () {
   },
   mounted() {
+    // if the website is youtubu.com / make the youtube bookmark button and init vido highlight
+    this.checkIfYoutube();
   },
   unmounted() {
   },
@@ -25,6 +29,7 @@ export default {
       SVGIcons: SVG,
       open_state: false,
       page_state: PAGE_INDEX.Media_PAGE,
+      is_Youtube: false
     }
   },
   methods: {
@@ -41,6 +46,16 @@ export default {
     openMainContext() {
       this.open_state = !this.open_state
       this.highlightChanged(-1)
+    },
+
+    // check the current webpage and custom extension tool
+    checkIfYoutube() {
+      const url = window.location.href;
+      if (url.includes('youtube.com')) {
+        this.isYouTube = true;
+      } else {
+        this.is_Youtube = false;
+      }
     }
   },
 }
@@ -73,7 +88,7 @@ export default {
         <MusicPlayer class="music-player" />
       </div>
     </div>
-    <HighLightComponent @highlightEvent="highlightChanged" />
+    <YoutubeBookMarkComponent v-if="is_Youtube" />
   </div>
 </template>
   
