@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
-    "name": "maika",
-    "description": "Browser Extension of maika.com V3",
+    "name": "mmm",
+    "description": "Browser Extension of mmm",
     "version": "0.0.1",
     "permissions": [
         "contextMenus",

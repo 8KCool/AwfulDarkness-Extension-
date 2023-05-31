@@ -6,12 +6,14 @@ import { PAGE_INDEX } from '@/view/content/const.js'
 import ContentHeader from "@/view/content/components/ContentHeader.vue"
 import ContentPage from "@/view/content/pages/index.vue"
 import MusicPlayer from "@/view/content/components/MusicPlayer.vue"
+import HighLightComponent from "@/view/content/components/highlight/HighLightComponent.vue"
 import YoutubeBookMarkComponent from "@/view/content/components/youtube/YoutubeBookMarkComponent.vue"
 export default {
   components: {
     ContentHeader,
     MusicPlayer,
     ContentPage,
+    HighLightComponent,
     YoutubeBookMarkComponent
   },
   name: 'mainContentView',
@@ -28,7 +30,7 @@ export default {
       PAGES: PAGE_INDEX,
       SVGIcons: SVG,
       open_state: false,
-      page_state: PAGE_INDEX.Media_PAGE,
+      page_state: PAGE_INDEX.HIGHLIGHT_PAGE,
       is_Youtube: false
     }
   },
@@ -40,9 +42,10 @@ export default {
     highlightChanged(param) {
       this.open_state = true;
       if (param != -1)
-        this.page_state = PAGE_INDEX.Media_PAGE
+        this.page_state = PAGE_INDEX.HIGHLIGHT_PAGE
       this.$refs.content_page.submit(this.page_state, param);
     },
+
     openMainContext() {
       this.open_state = !this.open_state
       this.highlightChanged(-1)
@@ -72,10 +75,6 @@ export default {
         </div>
 
         <div class="float-right btn-group">
-          <!-- <div class="icon-button mr-7px ico-18 ico-flag"></div> -->
-          <!-- <div class="icon-button mr-7px ico-27 ico-alarm">
-                      <div class="alarm-badge">5</div>
-                    </div> -->
           <div class="icon-button mr-7px ico-27 ico-expand"></div>
           <div class="icon-button mr-7px ico-27 ico-setting"></div>
           <div class="icon-button mr-2px ico-27 ico-close" @click="open_state = !open_state"></div>
@@ -88,6 +87,7 @@ export default {
         <MusicPlayer class="music-player" />
       </div>
     </div>
+    <HighLightComponent @highlightEvent="highlightChanged" />
     <YoutubeBookMarkComponent v-if="is_Youtube" />
   </div>
 </template>

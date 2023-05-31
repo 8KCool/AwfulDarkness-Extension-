@@ -1,14 +1,14 @@
 
 <script>
 import { PAGE_INDEX } from '@/view/content/const.js'
-import MediaPage from "@/view/content/pages/MediaPage.vue"
+import HighlightPage from "@/view/content/pages/HighlightPage.vue"
 
 export default {
   props: {
     page_prop: Number,
   },
   components: {
-    MediaPage,
+    HighlightPage,
   },
   name: 'mainPageView',
   data() {
@@ -17,6 +17,15 @@ export default {
     }
   },
   methods: {
+    submit(changedPage, param) {
+      switch (changedPage) {
+        case this.Pages.HIGHLIGHT_PAGE: //highlight
+          this.$refs.highlight_page.submit(param);
+          break;
+        default:
+          break;
+      }
+    },
 
   },
 
@@ -25,7 +34,8 @@ export default {
 
 <template>
   <div>
-    <MediaPage class="custom-page hide" :class="page_prop == Pages.MEDIA_PAGE && 'active show'" />
+    <HighlightPage ref="highlight_page" class="custom-page hide"
+      :class="page_prop == Pages.HIGHLIGHT_PAGE && 'active show'" />
   </div>
 </template>  
 
